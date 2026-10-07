@@ -1,0 +1,91 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+% ---------- Formatting ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=2pt, parsep=0pt}
+\newcommand{\sectiontitle}[1]{\vspace{6pt}{\large\bfseries #1}\vspace{2pt}\hrule\vspace{4pt}}
+\newcommand{\role}[2]{\textbf{#1}\hfill #2\\}
+\newcommand{\subrole}[2]{\textit{#1}\hfill\textit{#2}\\[-2pt]}
+\newcommand{\pub}[4]{\item \textbf{#1}. #2. \textit{#3}. #4.}
+
+\begin{document}
+
+% ---------- Header ----------
+{\LARGE \textbf{Yonatan Sverdlov}}\\[-1pt]
+PhD Student in Mathematics, Technion $\mid$ Graph Neural Networks $\mid$ Geometric Deep Learning\\[2pt]
+Rehovot, Israel $\mid$ \href{mailto:yonatansverdlov276@gmail.com}{yonatansverdlov276@gmail.com} $\mid$ +972-54-4764271 $\mid$
+\href{https://yonatansverdlov.github.io/Yonatan-Sverdlov/}{Website} $\mid$
+\href{https://github.com/yonatansverdlov}{GitHub} $\mid$
+\href{https://scholar.google.com/citations?user=M4o74roAAAAJ}{Google Scholar}
+
+% ---------- Profile ----------
+\sectiontitle{Profile}
+PhD student at the Technion advised by Prof. Nadav Dym. Researching graph neural networks, geometric deep learning, expressivity, oversquashing, invariance/equivariance, and Lipschitz-stable representations. Publications at ICLR, NeurIPS, and LoG, including the LoG 2025 Best Paper Award.
+
+% ---------- Education ----------
+\sectiontitle{Education}
+\role{Technion -- Israel Institute of Technology}{Nov 2023 -- Present}
+\subrole{PhD in Mathematics}{Advisor: Prof. Nadav Dym}
+
+\role{Weizmann Institute of Science}{Mar 2021 -- Jul 2023}
+\subrole{MSc in Mathematics and Computer Science, GPA: 93.5}{Advisor: Prof. Shimon Ullman}
+
+\role{Tel Aviv University}{Oct 2017 -- Dec 2020}
+\subrole{BSc in Mathematics and Computer Science, GPA: 92}{}
+
+% ---------- Research Experience ----------
+\sectiontitle{Research Experience}
+\role{Technion -- Israel Institute of Technology}{Nov 2023 -- Present}
+\subrole{PhD Researcher}{Graph Neural Networks and Geometric Deep Learning}
+\begin{itemize}
+  \item Develop theory and architectures for graph-structured and geometric data.
+  \item Build experimental pipelines in PyTorch and PyTorch Geometric for synthetic and real graph benchmarks.
+\end{itemize}
+
+\role{Weizmann Institute of Science}{Mar 2021 -- Jul 2023}
+\subrole{MSc Researcher}{Computer Vision and Continual Learning}
+\begin{itemize}
+  \item Developed adaptive weight modulation methods for rehearsal-free continual learning.
+  \item Evaluated forgetting and transfer in deep vision models across multiple benchmarks.
+\end{itemize}
+
+\role{Evrideo}{Aug 2023 -- Oct 2023}
+\subrole{AI Consultant}{Applied Computer Vision}
+\begin{itemize}
+  \item Built a computer-vision proof of concept and supported early-stage ML feasibility validation.
+\end{itemize}
+
+% ---------- Publications ----------
+\sectiontitle{Publications}
+\begin{itemize}
+  \pub{When and How to Canonize: A Generalization Perspective}{Yonatan Sverdlov, Benjamin Friedman, Snir Hordan, Nadav Dym}{arXiv preprint}{2026}
+  \pub{Monotone and Separable Set Functions: Characterizations and Neural Models}{Soutrik Sarangi, Yonatan Sverdlov, Nadav Dym, Abir De}{NeurIPS}{2025}
+  \pub{Short-Range Oversquashing}{Yaaqov Mishayev, Yonatan Sverdlov, Tal Amir, Nadav Dym}{LoG Oral, Best Paper Award}{2025}
+  \pub{Toward Bi-Lipschitz Geometric Models}{Yonatan Sverdlov, Eitan Rosen, Nadav Dym}{arXiv preprint}{2025}
+  \pub{FSW-GNN: A Bi-Lipschitz WL-Equivalent Graph Neural Network}{Yonatan Sverdlov, Yair Davidson, Nadav Dym, Tal Amir}{LoG}{2025}
+  \pub{On the Expressive Power of Sparse Geometric MPNNs}{Yonatan Sverdlov, Nadav Dym}{ICLR}{2025}
+  \pub{Revisiting Multi-Permutation Equivariance through the Lens of Irreducible Representations}{Yonatan Sverdlov, Ido Springer, Nadav Dym}{ICLR}{2025}
+  \pub{Efficient Rehearsal Free Zero Forgetting Continual Learning using Adaptive Weight Modulation}{Yonatan Sverdlov, Shimon Ullman}{arXiv preprint}{2023}
+\end{itemize}
+
+% ---------- Skills ----------
+\sectiontitle{Skills}
+\begin{tabular}{@{}p{3.1cm}p{13.5cm}@{}}
+\textbf{Programming} & Python, Java, C++ \\
+\textbf{ML Frameworks} & PyTorch, PyTorch Geometric, NumPy \\
+\textbf{Research Areas} & Graph Neural Networks, Geometric Deep Learning, Computer Vision, Continual Learning, Representation Learning \\
+\textbf{Tools} & Git, GitHub, LaTeX \\
+\textbf{Languages} & Hebrew native, English professional \\
+\end{tabular}
+
+\end{document}
